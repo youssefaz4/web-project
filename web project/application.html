@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="appli">
+    <div class="applicationform">
+    <div class="apptitle">Join Our Team</div>
+     <form id="jobapplicationForm">
+     <label for="name">Full Name</label>
+    <input type="text" id="name" required>
+    <label for="email">Email</label>
+    <input type="email" id="email" required>
+    <label for="phone">Phone Number</label>
+     <input type="tel" id="phone" required>
+    <label for="resume">Upload Resume (PDF/DOC)</label>
+    <input type="file" id="resume" accept=".pdf, .doc, .docx" required>
+    <label for="message">Why did you choose us</label>
+    <textarea id="message" rows="4" required></textarea>
+
+            <button class="submit">Submit Application</button>
+        </form>
+    </div></div>
+    <div class="footer">
+        <div class="quicklinks">
+            <h3>Quick Links</h3>
+           <a href="index.html"><div id="link1">homepage</div></a> 
+           <a href="about.html"><div id="link2">About us</div></a> 
+           <a href="menu.html"><div id="link3">Menu</div></a> 
+           <a href="offers.html"><div id="link4">Offers</div></a> 
+           <a href="careers.html"><div id="link5">Careers</div></a> 
+           <a href="updated.html"><div id="link6">Contact us</div></a> 
+           <div class="logo"></div>
+        </div>
+        <div id="follow"><h2>Follow Us!</h2><a href="https://instagram.com/" ><span class="color1">In</span><span class="color2">st</span><span class="color3">ag</span><span class="color4">ra</span><span class="color5">m</span></a>
+<a href="https://tiktok.com/@" class="color6">TikTok</a></div>
+        <div class="copy">&copy;2025 By Youssef az.All rights reserved</div>
+    </div>
+
+    <script>
+        document.getElementById("jobApplicationForm").addEventListener("submit", function(event) {
+            this.reset();
+        });
+    </script>
+
+
+</body>
+</html>

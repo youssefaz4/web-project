@@ -1,0 +1,1455 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif ;
+    letter-spacing: 2px;
+    /* border: solid; */
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    position:sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    background-image: url(./images/cedarlogo.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    /* border: solid; */
+    margin-bottom: 0;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    width: 97%;
+    gap: 30px;
+    /* border: solid; */
+    
+}
+.navmnu{
+    padding-top: 8px;
+    font-weight: 300;
+    /* border: solid black; */
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    
+    
+}
+.navmnu:hover{
+    /* color: black; */
+    transform:scale(3px);
+    transition:0.3s;
+}
+.title{
+  
+    padding-left: 60px;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+
+.nav {
+    display: flex;
+    gap: 2vw;
+    margin-left: 700px;
+    /* border: solid; */
+
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    transform:scalex(3px);
+    transition:0.3s;
+}
+
+
+  
+
+.img {
+    /* border: solid; */
+    position: relative;
+    color: rgb(0, 0, 0);
+    background-image: url(./images/rpic.jpg);
+    width: 100%;
+    height: 100vh;
+    font-weight: 700;
+    background-size: cover;
+    font-size:30px;
+    z-index: 1;
+}
+
+.img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.76); 
+    z-index: -1;
+}
+
+.back {
+    /* border: solid;  */
+    position: relative;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100vh;
+    font-weight: 700;
+    font-size:30px;
+   background-color:rgba(117, 107, 47, 0.31);
+    z-index: -1;
+}
+
+.welc{
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+#par{
+    text-align: center;
+    font-size:20px ;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.color1{
+    color:black;
+}
+.color1:hover{
+    color: #3645ec;
+}
+.color2{
+    color: black;
+}
+.color2:hover{
+    color:#8627bd
+    
+}
+.color3{
+    color: black;
+}
+.color3:hover{
+    color: #b41f62;
+}
+.color4{
+    color: black;
+}
+.color4:hover{
+color: #b99532
+}
+.color5{
+    color: black;
+}
+.color5:hover{
+color: #c46110;
+}
+.color6{
+    color: black;
+}
+.color6:hover{
+    color: black;
+}
+#follow{
+    /* border: solid; */
+   position: absolute;
+   margin-left: 1000px;
+}
+#state{
+    /* border: solid; */
+    width: fit-content ;
+    margin-left: 900px;
+    margin-top: 50px;
+    transform: translateY(300px);
+   color: black; 
+}
+
+.mission {
+     /* border: solid;  */  
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    
+}
+.image1{
+    height: 200px;
+    margin-left: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(./images/cedar\ removebackground.png);
+}
+.image2{
+    /* border: solid; */
+    background-image: url(images/waiters.jpg);
+    background-size: cover;
+    height: 300px;
+    width: 400px;
+    border-radius: 30px;
+    margin-top: -300px;
+    margin-left: 900px;
+}
+.image3
+{
+    position: absolute;
+    background-image: url(./images/happy.jpg);
+    background-size: cover;
+    background-position: calc(500px) bottom;
+    height: 300px;
+    width: 500px;
+    margin-left: 20px;
+    margin-top: -300px;
+    border-radius: 30px;
+
+}
+
+.state2{
+    /* border: solid; */
+    color: black;
+    width: fit-content;
+    margin-left: 20px;
+   
+   
+}
+
+
+.title2 {
+    /* border: solid; */
+    text-align: center;
+    z-index: 2;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 800px;
+}
+
+.mission-content {
+    /* border: solid; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.msnpic {
+    background-image: url(./images/pic.jpg);
+    /* border: solid; */
+    height: 400px;
+    width: 600px;
+    border-radius: 8px;
+    background-size: cover;
+
+}
+
+.phrase {
+    color: black;
+    font-weight:600px;
+    font-size: 30px;
+    width: 600px;
+    padding: 20px;
+
+}
+
+.vision{
+    /* border: solid; */
+    height: 400px;
+    background-color: rgba(89, 46, 46, 0.544);
+    display: flex;
+}
+.phrase2{
+    font-size:30px ;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-left: 200px;
+}
+.visioncont{
+    color: black;
+    font-weight:600px;
+    font-size: 30px;
+    width: 600px;
+    padding: 20px;
+}
+.menu{
+    display: flex;
+    /* border: solid; */
+    height: 740px;
+    background-color: white;
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+    height: auto;
+    background-color: white;
+}
+.visionpic{
+    background-image: url(./images/vision.jpg);
+    background-size: cover;
+    height: 400px;
+    width: 400px;
+    margin-left: 50px;
+}
+
+
+.cat1 {
+    /* border: solid; */
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-image: url(./images/mainplates.jpg);
+    text-align: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 600px;
+    height: 300px;
+    font-weight: 700;
+    padding-top: 10px;
+    margin-top: 60px;
+    margin-left: 60px;
+    background-size: cover;
+    font-size:60px;
+    z-index: 1;
+    transition: 0.3s;
+    border: 0;
+}
+
+.cat1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.288); 
+    z-index: 0;
+   
+}
+.cat1:hover{
+    transform:scale(1.05);
+    transition: 0.3s ease-in-out
+    
+}
+.names{
+    position: relative;
+    z-index: 2;
+}
+.cat2{
+      /* border: solid; */
+      position: relative;
+      color: rgb(255, 255, 255);
+      background-image: url(./images/side\ dishes.webp);
+      text-align: center;
+      align-items: center;
+      border-radius: 50px;
+      width: 600px;
+      height: 300px;
+      font-weight: 700;
+      padding-top: 10px;
+      margin-top: 60px;
+      margin-left: 60px;
+      background-size: cover;
+      font-size:60px;
+      z-index: 1;
+      transition: 0.3s;
+      border: 0;
+}
+.cat2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.288); 
+    z-index: 0;
+   
+}
+.cat2:hover{
+    transform:scale(1.05);
+    transition: 0.3s ease-in-out
+
+}
+.cat3{
+       /* border: solid; */
+       position: relative;
+       color: rgb(255, 255, 255);
+       background-image: url(./images/beverages.webp);
+       text-align: center;
+       align-items: center;
+       border-radius: 50px;
+       width: 600px;
+       height: 300px;
+       font-weight: 700;
+       padding-top: 10px;
+       margin-top: 20px;
+       margin-left: 60px;
+       background-size: cover;
+       font-size:60px;
+       z-index: 1;
+       transition: 0.3s;
+       border: 0;
+ }
+ .cat3::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.288); 
+    z-index: 0;
+   
+}
+ .cat3:hover{
+    transform:scale(1.05);
+    transition: 0.3s ease-in-out
+
+}
+.cat4{
+     /* border: solid; */
+     position: relative;
+     color: rgb(255, 255, 255);
+     background-image: url(./images/desserts.jpg);
+     text-align: center;
+     align-items: center;
+     border-radius: 50px;
+     width: 600px;
+     height: 300px;
+     font-weight: 700;
+     padding-top: 10px;
+     margin-top: 20px;
+     margin-left: 60px;
+     background-size: cover;
+     font-size:60px;
+     z-index: 1;
+     transition: 0.3s;
+     border: 0;
+
+}
+.cat4::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.288); 
+    z-index: 0;
+   
+}
+.cat4:hover{
+    transform:scale(1.05);
+    transition: 0.3s ease-in-out
+
+}
+.cat5{
+    /* border: solid; */
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-image: url(./images/sandwiches.jpg);
+    text-align: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 600px;
+    height: 300px;
+    font-weight: 700;
+    padding-top: 10px;
+    margin-top: 20px;
+    margin-left: 60px;
+    background-size: cover;
+    font-size:60px;
+    z-index: 1;
+    transition: 0.3s;
+    border: 0;
+
+}
+.cat5::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.288); 
+    z-index: 0;
+   
+}
+.cat5:hover{
+    transform:scale(1.05);
+    transition: 0.3s ease-in-out
+
+}
+.cat6{
+    /* border: solid; */
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-image: url(./images/kid\ meal.jpg);
+    text-align: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 600px;
+    height: 300px;
+    font-weight: 700;
+    padding-top: 10px;
+    margin-top: 20px;
+    margin-left: 60px;
+    background-size: cover;
+    font-size:60px;
+    z-index: 1;
+    transition: 0.3s;
+    border: 0;
+
+}
+.cat6::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.288); 
+    z-index: 0;
+   
+}
+.cat6:hover{
+    transform:scale(1.05);
+    transition: 0.3s ease-in-out
+
+}
+.contt1{
+    margin-top: -270px;
+    position: relative;
+    /* border: solid; */
+    height:900px;
+    width: 100%;
+    
+   
+}
+.food{
+    display: flex;
+    /* border: solid; */
+    flex-wrap: wrap;
+    height: 1950px;
+    background-color: white;
+    flex-wrap: wrap; 
+    height: auto;
+    background-color: white;
+    max-width: 100%;
+    margin-top: 270px;
+   
+}
+.food1{
+    /* border: solid; */
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-image: url(./images/mainplates.jpg);
+    border-radius: 50px;
+    width:500px;
+    height: 300px;
+    margin-top: 60px;
+    margin-left: 60px;
+    background-size: cover;
+    
+}
+.cont1{
+
+    position: absolute;
+    margin-left: 40px;
+  /* border: solid; */
+  /* text-align: center; */
+
+
+}
+.name1{
+
+    /* border: solid; */
+  padding-left: 70px;
+  display: flex;
+  /* flex-direction: column; */
+  font-weight: 800;
+  font-size: 40px;
+}
+.price{
+    /* border: solid; */
+    margin-left: 220px;
+    font-weight: 500;
+    color: green;
+}
+.desc{
+    padding-left: 30px;
+    margin-top: 20px;
+   display: flex;
+    text-align: left;
+    color: rgb(76, 75, 75);
+}
+#titles1{
+    /* border: solid; */
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    margin-left: -320px;
+    margin-top:400px;
+    transform: rotate(270deg);
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 40px;
+
+   
+
+}
+.food2 {
+    /* border: solid; */
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-image: url(./images/chicken\ plate.webp);
+    border-radius: 50px;
+    width: 500px;
+    height: 300px;
+    margin-top: 60px;
+    margin-left: 150px;
+    background-size: cover;
+    background-position: center;
+}
+.cont2{
+    margin-left: 600px;
+    position: absolute;
+    /* border: solid; */
+}
+.name2{
+    /* border: solid; */
+    padding-left: 70px;
+    display: flex;
+    font-weight: 800;
+    font-size: 35px;    
+   margin-left: 90px;
+
+}
+.price2{
+    /* border: solid; */
+    margin-left: 60px;
+    font-weight: 500;
+    color: green;
+
+}
+.desc2{
+    margin-top: 20px;
+    margin-left: 160px;
+   display: flex;
+    text-align: left;
+    color: rgb(76, 75, 75);
+
+}
+.food3 {
+    /* border: solid; */
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-image: url(./images/shrimp\ plate.webp);
+    border-radius: 50px;
+    width: 500px;
+    height: 300px;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-left: 60px;
+    background-size: calc(500px);
+    background-position: left;
+}
+.cont3{
+    /* border: solid; */
+    margin-left: 40px;
+    margin-top: 440px;
+    position: absolute;
+   
+}
+.price3{
+    /* border: solid; */
+    margin-left: 140px;
+    font-weight: 500;
+    color: green;
+    padding-right: 30px;
+}
+
+.food4{
+    /* border: solid; */
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-image: url(./images/spicy\ chicken\ plate.webp);
+    border-radius: 50px;
+    width:500px;
+    height: 300px;
+    margin-top: 60px;
+    margin-left: 150px;
+    background-size: calc(500px);
+    background-position: left;
+}
+.cont4{
+    /* border: solid black; */
+    margin-top: 440px;
+    margin-left: 600px;
+    position: absolute;
+    
+}
+.name4{
+    /* border: solid; */
+    padding-left: 90px;
+    display: flex;
+    font-weight: 800;
+    font-size: 35px;    
+    margin-left: 80px;
+
+}
+.price4{
+    /* border: solid; */
+    margin-left: 140px;
+    font-weight: 500;
+    color: green;
+    transform: translateX(-80px);
+}
+.desc4{
+    padding-left: 50px;
+    margin-top: 20px;
+    margin-left: 100px;
+   display: flex;
+    text-align: left;
+    color: rgb(76, 75, 75);
+
+}
+.contt2{
+    /* border: solid; */
+    width: 100%;
+    height: 900px;
+}
+
+.food5{
+    /* border: solid; */
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-image: url(./images/curly\ fries.jpg);
+    text-align: center;
+    align-items: center;
+    border-radius: 50px;
+    width:500px;
+    height: 300px;
+    font-weight: 700;
+    padding-top: 10px;
+    margin-top: 60px;
+    margin-left: 60px;
+    background-size: cover;
+    font-size:60px;
+}
+.cont5{
+    /* border: solid black; */
+    margin-top: -380px;
+    margin-left: 30px;
+    position: absolute;
+
+}
+#titles2{
+    /* border: solid; */
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    margin-top: 300px;
+    transform: rotate(270deg);
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 40px;
+    margin-left: -320px;
+
+
+   
+
+}
+.price5{
+    /* border: solid; */
+    margin-left: 265px;
+    font-weight: 500;
+    color: green;
+    /* transform: translateX(-80px); */
+}
+.desc5{
+    padding-left: 50px;
+    margin-top: 20px;
+    margin-left: 10px;
+   display: flex;
+    text-align: left;
+    color: rgb(76, 75, 75);
+
+}
+
+.food6{
+    /* border: solid; */
+    color: rgb(255, 255, 255);
+    background-image: url(./images/garden\ salad.webp);
+    border-radius: 50px;
+    width:500px;
+    height: 300px;
+    margin-top: 60px;
+    margin-left: 150px;
+    background-size: cover;
+    background-position: calc(500px);
+    font-size:60px;
+}
+.cont6{
+    /* border: solid black; */
+    margin-left: 600px;
+    margin-top: -380px;
+    width: fit-content;
+    position: absolute;
+}
+.desc6{
+    padding-left: 50px;
+    margin-top: 20px;
+    margin-left: 110px;
+    text-align: left;
+    color: rgb(76, 75, 75);
+
+
+}
+
+.food7{
+    /* border: solid; */
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-image: url(./images/chili\ fries.webp);
+    border-radius: 50px;
+    width:500px;
+    height: 300px;
+    padding-top: 10px;
+    margin-top: 60px;
+    margin-left: 60px;
+    background-size: cover;
+    background-position: calc(500px);
+}
+.cont7{
+    /* border: solid black; */
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 700px;
+}
+.desc7{
+    padding-left: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: left;
+    color: rgb(76, 75, 75);
+
+
+}
+
+.food8{
+    /* border: solid; */
+    color: rgb(255, 255, 255);
+    background-image: url(./images/fries.jpg);
+    background-position: bottom;
+    border-radius: 50px;
+    width:500px;
+    height: 300px;
+    padding-top: 10px;
+    margin-top: -140px;
+    margin-left: 190px;
+    background-size: cover;
+}
+.cont8{
+    /* border: solid black; */
+    margin-top: 250px;
+    margin-left: -100px;
+  }
+  .contt3{
+    position: relative;
+    /* border: solid; */
+    width: 100%;
+    height: 900px;
+}
+  #titles3{
+    /* border: solid; */
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    margin-left: -268px;
+    margin-top: 450px;
+    transform: rotate(270deg);
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 40px;
+
+   
+
+}
+.food9{
+  /* border: solid; */
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-image: url(./images/minted.webp);
+    border-radius: 50px;
+    width:500px;
+    height: 300px;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-left: 60px;
+    background-size: cover;
+    background-position: calc(500px);
+}
+.cont9{
+    /* border: solid; */
+    position: absolute;
+    margin-left:720px;
+    top: 0;
+}
+.food10{
+    /* border: solid; */
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-image: url(./images/mango.webp);
+    border-radius: 50px;
+    width:500px;
+    height: 300px;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-left: 150px;
+    background-size: cover;
+    background-position: calc(500px);
+}
+.cont10{
+    /* border: solid; */
+    position: absolute;
+    top: 0;
+   margin-left: -60px;
+}
+.food11{
+    /* border: solid; */
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-image: url(./images/choco.webp);
+    background-position: calc(500px);
+    border-radius: 50px;
+    width:500px;
+    height: 300px;
+    margin-top: 60px;
+    margin-left: 60px;
+    background-size: cover;
+}
+.cont11{
+    /* border: solid; */
+    position: absolute;
+    margin-left: 720px;
+    margin-top: -80px;
+}
+.price11{
+    /* border: solid; */
+    margin-left: 265px;
+    font-weight: 500;
+    color: green;
+   
+}
+.food12{
+    /* border: solid; */
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-image: url(./images/strawberry.webp);
+    background-position:center;
+    border-radius: 50px;
+    width:500px;
+    height: 300px;
+    margin-top: 60px;
+    margin-left: 150px;
+    background-size: 500px;
+}
+.cont12{
+    /* border: solid ; */
+    position: absolute;
+    margin-left: -60px;
+    margin-top: -75px;
+}
+.contt4{
+    /* border: solid; */
+    width: 100%;
+    height: 900px;
+    position: relative; 
+}
+#titles4{
+    /* border: solid; */
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    margin-left: -300px;
+    margin-top: 400px;
+    transform: rotate(270deg);
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 40px;
+    position: absolute;
+
+   
+
+}
+.food13{
+    /* border: solid; */
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-image: url(./images/fajita.webp);
+    border-radius: 50px;
+    width:500px;
+    height: 300px;
+    margin-top: 60px;
+    margin-left: 60px;
+    background-size: cover;
+    background-position: calc(500px);
+}
+.cont13{
+    /* border: solid; */
+    position: absolute;
+    top: 0;
+    margin-left: 730px;
+}
+.name13{
+    /* border: solid; */
+    padding-left: 80px;
+    display: flex;
+    font-weight: 800;
+    font-size: 35px;    
+
+}
+.food14{
+    /* border: solid; */
+    color: rgb(255, 255, 255);
+    background-image: url(./images/turkey.webp);
+    background-position: right;
+    border-radius: 50px;
+    width:500px;
+    height: 300px;
+    margin-top: 60px;
+    margin-left: 150px;
+    background-size: cover;
+}
+.cont14{
+    /* border: solid ; */
+    position: absolute;
+    margin-left: 645px;
+    margin-top: 400px;
+    
+
+}
+.price14{
+        /* border: solid; */
+        margin-left:25px;
+        font-weight: 500;
+        color: green;
+        
+
+}
+
+.food15{
+    /* border: solid; */
+    color: rgb(255, 255, 255);
+    background-image: url(./images/spicy\ sandwich.webp);
+    background-position: calc(500px);
+    border-radius: 50px;
+    width:500px;
+    height: 300px;
+    margin-top: 60px;
+    margin-left: 60px;
+    background-size: cover;
+}
+.cont15{
+    /* border: solid; */
+    position: absolute; 
+    margin-top: 400px;  
+    margin-left: 25px; 
+}
+.price15{
+    /* border: solid; */
+    margin-left:75px;
+    font-weight: 500;
+    color: green;
+    
+
+}
+.food16{
+    /* border: solid; */
+    color: rgb(255, 255, 255);
+    background-image: url(./images/honey\ mustard.webp);
+     background-position: calc(500px);
+    border-radius: 50px;
+    width:500px;
+    height: 300px;
+    margin-top: 60px;
+    margin-left: 90px;
+    background-size: cover;
+}
+.cont16{
+        /* border: solid ; */
+        position: absolute;
+        top: 0;
+
+}
+.price16{
+      /* border: solid; */
+      margin-left:25px;
+      font-weight: 500;
+      color: green;
+      
+}
+.contt5{
+    /* border: solid; */
+    width: 100%;
+    height: 900px;
+    position: relative;
+
+
+}
+#titles5{
+    /* border: solid black; */
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    margin-left: -220px;
+    margin-top: 400px;
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 40px;
+    position: absolute;
+    transform: rotate(270deg);
+
+
+   
+
+}
+.food17{
+    /* border: solid; */
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-image: url(./images/chocolate\ lava\ cake.webp);
+    background-position: calc(500px);
+    border-radius: 50px;
+    width:500px;
+    height: 300px;
+    margin-top: 60px;
+    margin-left: 60px;
+    background-size: cover;
+
+}
+.cont17{
+    /* border: solid; */
+    position: absolute;
+    margin-left:30px ;
+    margin-top: 250px;
+    
+}
+.food18{
+    /* border: solid; */
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-image: url(./images/red\ velvet.webp);
+    background-position: calc(500px);
+    border-radius: 50px;
+    width:500px;
+    height: 300px;
+    margin-top: 60px;
+    margin-left: 150px;
+    background-size: cover;
+}
+.cont18{
+ /* border: solid ; */
+    position: absolute;
+    margin-left: 650px;
+    margin-top: 250px;
+}
+.contt6{
+    /* border: solid; */
+    width: 100%;
+    height: 780px;
+    position: relative;
+
+
+}
+#titles6{
+    /* border: solid black; */
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    margin-left: -310px;
+    margin-top: 400px;
+    transform: rotate(270deg);
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 40px;
+    position: absolute;
+
+}
+.food19{
+    /* border: solid; */
+    color: rgb(255, 255, 255);
+    background-image: url(./images/nuggets.webp);
+    border-radius: 50px;
+    width:500px;
+    height: 300px;
+    background-size: cover;
+    background-position: calc(500px);
+}
+.cont19{
+    /* border: solid; */
+    position: absolute;
+    margin-top:300px ;
+    margin-left: 100px;
+    
+}
+.name19{
+    /* border: solid; */
+    padding-left: 10px;
+    display: flex;
+    font-weight: 800;
+    font-size: 35px;    
+
+}
+.desc19{
+    padding-left: 50px;
+    margin-top: 20px;
+    margin-left: -80px;
+    text-align: left;
+    color: rgb(76, 75, 75);
+
+
+}
+.food20{
+    /* border: solid; */
+    color: rgb(255, 255, 255);
+    background-image: url(./images/mini\ pizzas.webp);
+    background-position: 100%;
+    border-radius: 50px;
+    width:500px;
+    height: 300px;
+    margin-top: 60px;
+    margin-left: 150px;
+    background-size: cover;
+}
+.cont20{
+    /* border: solid; */
+    position: absolute;
+    margin-left: 660px;
+    margin-top: 240px;
+    
+}
+.footer{
+    background-color: #EDEDED;
+    position: relative;
+    /* border: solid; */
+    width: 100%;
+    height: 300px;
+}
+h3{
+    margin: 40px;
+}
+#link1{
+    position: absolute;
+    margin-left:40px;
+    color: black;
+    
+}
+#link2{
+    position: absolute;
+    margin-left:40px;
+    margin-top: 30px;
+    color: black;
+    
+}
+#link3{
+    position: absolute;
+    margin-left:40px;
+    margin-top: 60px;
+    color: black;
+    
+}
+#link4{
+    position: absolute;
+    margin-left:200px;
+    color: black;
+    
+}
+#link5{
+    position: absolute;
+    margin-left:200px;
+    margin-top: 30px;
+    color: black;
+    
+}
+#link6{
+    position: absolute;
+    margin-left: 40px;
+    color: black;
+    margin-left: 200px;
+    margin-top: 60px;
+}
+.logo{
+    position: absolute;
+    background-image: url(./images/cedar\ logo.png);
+    height:300px;
+    width: 300px;
+    background-size: cover;
+    margin-left: 600px;
+    margin-top: -120px;
+}
+.copy{
+    margin-left: 1000px;
+    margin-top: 110px;
+}
+.offers{
+    height: 700px;
+    background-color: azure;
+}
+.ttle{
+    font-size: 70px;
+    padding-top: 100px;
+    padding-left: 300px;
+}
+.offerimg{
+    background-image: url(/images/offer.jpg);
+    background-size: cover;
+    background-position: calc(500px);
+    border-radius: 20px;
+    margin-left: 800px;
+    height: 400px;
+    width: 500px;
+}
+.offerdesc{
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: -300px;
+    margin-left: 200px;
+}
+.offrprc{
+
+        margin-top: 20px;
+        margin-left: 400px;
+        text-align: left;
+        color: rgb(76, 75, 75);
+        font-size: 40px;
+    
+    
+    
+}
+.padd{
+    padding-left: 200px;
+}
+.careers{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+.careers-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+.careers-section h2 {
+    font-size: 2em;
+    color: #333;
+}
+.careers-section p {
+    font-size: 1.2em;
+    color: #666;
+    max-width: 600px;
+    margin: 10px auto;
+}
+#apply-btn {
+    display: inline-block;
+    background-color: rgb(224, 28, 41);
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+#apply-btn:hover {
+    background-color: rgba(183, 28, 35, 1);
+}
+.appli {
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.applicationform {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+.apptitle{
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color:#8f740c;
+}
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+input,textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccccccb5;
+    border-radius: 5px;
+}
+.submit{
+    background-color: #8f740c;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    margin-top: 15px;
+}
+.submit:hover {
+    background-color: #6a580d;
+}
+.custform{
+   margin-top: 5%;
+   margin-left: 35%;
+   border-radius: 30px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    color: white;
+    
+}
+.custform:hover{
+    transition: 0.3s;
+    backdrop-filter: blur(10px);
+}
+.updatestate{
+    font-size: 25px;
+    color: white;
+}
